@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nadya ❤️</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Segoe UI;
+  color:white;
+  overflow:hidden;
+}
+
+/* LOADING */
+#loading{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:url("nadya1.jpg") center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+  animation:fadeOut 4s forwards 3s;
+}
+#loading::after{
+  content:"Hai Nadya ❤️";
+  font-size:35px;
+  background:rgba(0,0,0,0.4);
+  padding:15px 30px;
+  border-radius:15px;
+}
+@keyframes fadeOut{
+  to{opacity:0; visibility:hidden;}
+}
+
+/* AMPLoP */
+.envelope{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:220px;
+  height:160px;
+  border-radius:15px;
+  box-shadow:0 0 25px pink;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:24px;
+  cursor:pointer;
+  z-index:10;
+}
+
+/* SURAT */
+.letter{
+  display:none;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:85%;
+  max-width:800px;
+  background: rgba(255,255,255,0.05); /* transparan */
+  padding:25px;
+  border-radius:20px;
+  white-space:pre-wrap;
+  line-height:1.7;
+  overflow:auto;
+  max-height:80vh;
+  box-shadow:0 0 30px rgba(255,255,255,0.3);
+  z-index:11;
+  color:white;
+}
+
+/* COUNTDOWN */
+#countdown{
+  position:fixed;
+  top:10px;
+  right:10px;
+  background:pink;
+  padding:10px 15px;
+  border-radius:12px;
+  box-shadow:0 0 10px #ff69b4;
+  z-index:20;
+  text-align:center;
+}
+
+/* LOVE FALLING */
+.love{
+  position:fixed;
+  top:-10px;
+  font-size:20px;
+  color:#ff69b4;
+  animation:fall linear infinite;
+}
+@keyframes fall{
+  to{transform:translateY(110vh);}
+}
+
+/* SLIDESHOW BACKGROUND */
+.bg img{
+  position:fixed;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0;
+  z-index:-2;
+  animation:slide 70s linear infinite;
+}
+.bg img:nth-child(1){animation-delay:0s;}
+.bg img:nth-child(2){animation-delay:5s;}
+.bg img:nth-child(3){animation-delay:10s;}
+.bg img:nth-child(4){animation-delay:15s;}
+.bg img:nth-child(5){animation-delay:20s;}
+.bg img:nth-child(6){animation-delay:25s;}
+.bg img:nth-child(7){animation-delay:30s;}
+.bg img:nth-child(8){animation-delay:35s;}
+.bg img:nth-child(9){animation-delay:40s;}
+.bg img:nth-child(10){animation-delay:45s;}
+.bg img:nth-child(11){animation-delay:50s;}
+.bg img:nth-child(12){animation-delay:55s;}
+.bg img:nth-child(13){animation-delay:60s;}
+.bg img:nth-child(14){animation-delay:65s;}
+@keyframes slide{
+  0%{opacity:0;}
+  2%{opacity:1;}
+  7%{opacity:1;}
+  9%{opacity:0;}
+  100%{opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<div id="loading"></div>
+
+<!-- MUSIK MP3 -->
+<audio id="music" loop>
+  <source src="aboutyou.mp3" type="audio/mpeg">
+</audio>
+
+<!-- SLIDESHOW -->
+<div class="bg">
+<img src="nadya1.jpg">
+<img src="nadya2.jpg">
+<img src="nadya3.jpg">
+<img src="nadya4.jpg">
+<img src="nadya5.jpg">
+<img src="nadya6.jpg">
+<img src="nadya7.jpg">
+<img src="nadya8.jpg">
+<img src="nadya9.jpg">
+<img src="nadya10.jpg">
+<img src="nadya11.jpg">
+<img src="nadya12.jpg">
+<img src="nadya13.jpg">
+<img src="nadya14.jpg">
+</div>
+
+<div id="countdown"></div>
+<div class="envelope" onclick="openLetter()">💌 GAZ PENCET</div>
+<div class="letter" id="letter"></div>
+
+<script>
+/* PUISI ASLI */
+const text=`NADYA FIRNANDA PUTRI HARYONO.
+
+Nadya adalah wanita pertama yang membuat aku, Raffa, merasakan rasa sayang/cinta yang sebenarnya terhadap wanita. Aku pikir itu wajar karena Nadya wanita yang sangat sempurna bagi aku sehingga sangat layak dan masuk akal apabila aku sangat sangat sangat terobsesi mencintai-nya.
+
+Nadya sangat cantikkkkk, lucuuuu, imutttt, manissss pokok-nya dia cewe yang sangat gemesin. Selain paras-nya yang sangat sangat sangat menawan Nadya juga wanita yang pintar, baik, rajin, salihah, mandiri, sopan, pekerja keras, memiliki rasa empati yang tinggi, dan yang bikin aku tambah terkesan adalah Nadya wanita yang kuat dalam menjalani semua rintangan dalam hidup-nya. Masih banyak hal lain yang membuat aku merasa JATUH CINTA kepada Nadya.
+
+Jadi tidak heran lagi apabila Nadya menjadi idaman para cowo cowo. Nadya adalah primadona di setiap tempat yang dia datangi, Bahkan Nadya sudah disukai banyak cowo waktu dia masih SD dan berlanjut terus sampai dia di jenjang SMA. Menurut ku wajar sihh apabila Nadya banyak fans-nya soal-nya dia wanita yang sangat sangat sangat attractive. Walaupun aku tau siapa saja cowo yang suka sama Nadya tetapi itu sangat susah apabila aku disuruh menghitung berapa banyak fans-nya, cewe cewe saja pada nengok apabila melihat paras Nadya apalagi cowo cowo.
+
+Aku kenal Nadya waktu kita berada di jenjang SMP, waktu pertama kali masuk SMP kita tidak saling kenal tetapi aku mengetahui nama dia dan kelas dia, kata Nadya sih waktu itu dia juga tau aku (KATANYA). Aku mengakui waktu itu memang Nadya CANTIK BANGET cuman aku belum ada rasa sama Nadya. Akhir-nya aku kenal Nadya pada waktu kelas 8, waktu itu kenal gara gara aku sering nyontek dia dan kita semakin dekat karena pada saat itu kita sering mabar Mobile Legend. Waktu begitu cepat sampai akhir-nya kita sudah memasuki jenjang SMA, waktu itu kita berbeda pilihan sekolah, Nadya melanjutkan belajar di SMA Negeri 1 Boja sedangkan aku bermain-main di SMK Negeri 3 Kendal. Pada awal kelas 10 kami memutuskan untuk lost contact karena waktu itu aku cowo yang sangat sangat membosankan. Akhir-nya kami melanjutkan hidup masing-masing tanpa mengetahui kabar satu sama lain. Hampir 2 tahun kami lost contact dan Alhamdulillah kita dipertemukan lagi saat kita mau lulus SMA. Seperti biasa hubungan aku sama Nadya tidak lurus-lurus saja, kadang kita ketawa bareng bahagia bareng, dan ada waktu-nya Nadya bener-bener lagi gamau sama aku. Semua itu aku anggap wajar sih karena memang mood wanita susah ditebak. Sampai akhir-nya kita dipisahkan oleh jarak karena aku harus pergi ke luar Pulau untuk bekerja. Selama LDR kami selalu menjaga komunikasi dan tetap selalu berkomunikasi satu sama lain, walau terkadang memang berat karena kita cuman bisa komunikasi secara daring. Dan Nadya biasa-nya sering marah-marah gatau kenapa tetapi aku sukaaa. Aku sangat sangat sangat ingin secepatnya bertemu Nadya dan mungkin Nadya memiliki keinginan yang sama. Semoga lebaran nanti aku bisa bertemu lagi dengan Nadya.
+
+Aku sangat sayang kepada Nadya, aku pengen bisa bahagia selalu bareng Nadya, aku pengen hidup bareng Nadya. Nadya adalah tujuan ku yang harus benar-benar ku capai kelak, Tunggu aku berhasil manggapai cita-cita ku yaaa Naddddd baru aku bisa mengejar tujuan ku.
+
+Apapun yang terjadi aku tetap bersyukur bisa bersama wanita se CANTIK Nadya, se IMUT Nadya, se LUCU Nadya, dan banyak hal lain yang aku suka dari Nadya.
+
+I LOVE YOU, 
+NADYA FIRNANDA PUTRI HARYONO.
+
+Happy Valentine.`;
+
+let i=0;
+
+function openLetter(){
+  document.querySelector(".envelope").style.display="none";
+  document.querySelector(".letter").style.display="block";
+  typeWriter();
+  document.body.addEventListener("click", function(){
+    document.getElementById("music").play();
+  },{once:true});
+}
+
+function typeWriter(){
+  if(i<text.length){
+    document.getElementById("letter").innerHTML+=text.charAt(i);
+    i++;
+    setTimeout(typeWriter,20); // pelan tapi tidak terlalu pelan
+  }
+}
+
+/* COUNTDOWN H-LEBARAN */
+const target=new Date("March 20, 2026 00:00:00").getTime();
+setInterval(()=>{
+  const now=new Date().getTime();
+  const gap=target-now;
+  if(gap<0){
+    document.getElementById("countdown").innerHTML="✨ Selamat Lebaran ❤️";
+    return;
+  }
+  const d=Math.floor(gap/(1000*60*60*24));
+  const h=Math.floor((gap%(1000*60*60*24))/(1000*60*60));
+  const m=Math.floor((gap%(1000*60*60))/(1000*60));
+  const s=Math.floor((gap%(1000*60))/1000);
+  document.getElementById("countdown").innerHTML=
+    "⏳ GWEH PULANK<br>"+d+" Hari "+h+" Jam "+m+" Menit "+s+" Detik";
+},1000);
+
+/* LOVE FALLING */
+function createLove(){
+  const love=document.createElement("div");
+  love.classList.add("love");
+  love.innerHTML="❤";
+  love.style.left=Math.random()*100+"vw";
+  love.style.animationDuration=(Math.random()*3+2)+"s";
+  document.body.appendChild(love);
+  setTimeout(()=>love.remove(),5000);
+}
+setInterval(createLove,200);
+
+</script>
+
+</body>
+</html>
